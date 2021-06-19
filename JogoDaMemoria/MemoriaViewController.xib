@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="landscape" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MemoriaViewController" customModule="JogoDaMemoria" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="iN0-l3-epB" id="viC-bm-MvP"/>
+                <outletCollection property="pecas" destination="5JO-KB-teG" collectionClass="NSMutableArray" id="lzf-ij-tkb"/>
+                <outletCollection property="pecas" destination="OJU-ig-Tsc" collectionClass="NSMutableArray" id="8Us-4n-kZE"/>
+                <outletCollection property="pecas" destination="tkX-V7-7hl" collectionClass="NSMutableArray" id="tH0-Jn-WiX"/>
+                <outletCollection property="pecas" destination="dO0-0l-reA" collectionClass="NSMutableArray" id="TO9-NP-JbY"/>
+                <outletCollection property="pecas" destination="FyV-li-Re4" collectionClass="NSMutableArray" id="0RV-Ty-ZOM"/>
+                <outletCollection property="pecas" destination="YuQ-nq-1yH" collectionClass="NSMutableArray" id="Oqd-ag-5jT"/>
+                <outletCollection property="pecas" destination="gTb-3d-sDf" collectionClass="NSMutableArray" id="Eqo-4e-Iwf"/>
+                <outletCollection property="pecas" destination="e2q-dF-5YU" collectionClass="NSMutableArray" id="cBX-cf-Lbm"/>
+                <outletCollection property="pecas" destination="Jdb-2t-97S" collectionClass="NSMutableArray" id="gtm-rD-8uy"/>
+                <outletCollection property="pecas" destination="zYb-i1-l6e" collectionClass="NSMutableArray" id="b0r-GE-dAA"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceRightToLeft" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kmU-kL-BDT">
+                    <rect key="frame" x="658" y="24" width="154" height="40"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                    <state key="normal" title="Reiniciar " image="reiniciar-icone">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="titleShadowColor" name="AccentColor"/>
+                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" weight="regular"/>
+                    </state>
+                    <connections>
+                        <action selector="toqueReiniciar:" destination="-1" eventType="touchUpInside" id="EP0-4a-FhJ"/>
+                    </connections>
+                </button>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="gaF-6o-Xvw">
+                    <rect key="frame" x="84" y="88" width="728" height="126"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zYb-i1-l6e">
+                            <rect key="frame" x="0.0" y="0.0" width="126" height="126"/>
+                            <accessibility key="accessibilityConfiguration" identifier="0"/>
+                            <state key="normal" backgroundImage="card"/>
+                            <connections>
+                                <action selector="toque:" destination="-1" eventType="touchUpInside" id="mQ7-qg-suU"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jdb-2t-97S">
+                            <rect key="frame" x="150.5" y="0.0" width="126" height="126"/>
+                            <accessibility key="accessibilityConfiguration" identifier="1"/>
+                            <state key="normal" backgroundImage="card"/>
+                            <connections>
+                                <action selector="toque:" destination="-1" eventType="touchUpInside" id="a6G-Iz-ROg"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e2q-dF-5YU">
+                            <rect key="frame" x="301" y="0.0" width="126" height="126"/>
+                            <accessibility key="accessibilityConfiguration" identifier="2"/>
+                            <state key="normal" backgroundImage="card"/>
+                            <connections>
+                                <action selector="toque:" destination="-1" eventType="touchUpInside" id="TtQ-Vu-mRO"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gTb-3d-sDf">
+                            <rect key="frame" x="451.5" y="0.0" width="126" height="126"/>
+                            <accessibility key="accessibilityConfiguration" identifier="3"/>
+                            <state key="normal" backgroundImage="card"/>
+                            <connections>
+                                <action selector="toque:" destination="-1" eventType="touchUpInside" id="1gr-ZZ-I0w"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YuQ-nq-1yH">
+                            <rect key="frame" x="602" y="0.0" width="126" height="126"/>
+                            <accessibility key="accessibilityConfiguration" identifier="4"/>
+                            <state key="normal" backgroundImage="card"/>
+                            <connections>
+                                <action selector="toque:" destination="-1" eventType="touchUpInside" id="GY3-ZT-A1c"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="8FH-0W-OiZ">
+                    <rect key="frame" x="84" y="238" width="728" height="126"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FyV-li-Re4">
+                            <rect key="frame" x="0.0" y="0.0" width="126" height="126"/>
+                            <accessibility key="accessibilityConfiguration" identifier="5"/>
+                            <state key="normal" backgroundImage="card"/>
+                            <connections>
+                                <action selector="toque:" destination="-1" eventType="touchUpInside" id="lMc-9b-Czp"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dO0-0l-reA">
+                            <rect key="frame" x="150.5" y="0.0" width="126" height="126"/>
+                            <accessibility key="accessibilityConfiguration" identifier="6"/>
+                            <state key="normal" backgroundImage="card"/>
+                            <connections>
+                                <action selector="toque:" destination="-1" eventType="touchUpInside" id="yJK-Sg-OYd"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5JO-KB-teG">
+                            <rect key="frame" x="301" y="0.0" width="126" height="126"/>
+                            <accessibility key="accessibilityConfiguration" identifier="7"/>
+                            <state key="normal" backgroundImage="card"/>
+                            <connections>
+                                <action selector="toque:" destination="-1" eventType="touchUpInside" id="o0Z-gS-8IU"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tkX-V7-7hl">
+                            <rect key="frame" x="451.5" y="0.0" width="126" height="126"/>
+                            <accessibility key="accessibilityConfiguration" identifier="8"/>
+                            <state key="normal" backgroundImage="card"/>
+                            <connections>
+                                <action selector="toque:" destination="-1" eventType="touchUpInside" id="BT5-7u-mco"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OJU-ig-Tsc">
+                            <rect key="frame" x="602" y="0.0" width="126" height="126"/>
+                            <accessibility key="accessibilityConfiguration" identifier="9"/>
+                            <state key="normal" backgroundImage="card"/>
+                            <connections>
+                                <action selector="toque:" destination="-1" eventType="touchUpInside" id="fLT-gl-hJz"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="8FH-0W-OiZ" secondAttribute="trailing" constant="84" id="KaJ-5H-X8d"/>
+                <constraint firstItem="kmU-kL-BDT" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="24" id="MAd-ev-f7P"/>
+                <constraint firstItem="gaF-6o-Xvw" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="84" id="MEc-Ug-VIE"/>
+                <constraint firstAttribute="trailing" secondItem="kmU-kL-BDT" secondAttribute="trailing" constant="84" id="Urc-3n-KHA"/>
+                <constraint firstItem="8FH-0W-OiZ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="84" id="VOT-mD-Gz7"/>
+                <constraint firstItem="gaF-6o-Xvw" firstAttribute="top" secondItem="kmU-kL-BDT" secondAttribute="bottom" constant="24" id="bW8-Rw-bs4"/>
+                <constraint firstAttribute="trailing" secondItem="gaF-6o-Xvw" secondAttribute="trailing" constant="84" id="kX2-zb-Fk9"/>
+                <constraint firstItem="8FH-0W-OiZ" firstAttribute="top" secondItem="gaF-6o-Xvw" secondAttribute="bottom" constant="24" id="okY-VR-Pwf"/>
+            </constraints>
+            <point key="canvasLocation" x="93.75" y="72.463768115942031"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="card" width="126" height="126"/>
+        <image name="reiniciar-icone" width="40" height="40"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
